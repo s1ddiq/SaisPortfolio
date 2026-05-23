@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import SilvaAvatar from "@/components/Avatar";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -48,9 +49,9 @@ export default function Home() {
       name: "Reincarnated",
       role: "Conceptor & QA Tester",
       status: "Current",
-      visits: "N/A",
-      image: "/",
-      discordLink: "https://discord.gg/reawaken",
+      visits: "Coming Soon",
+      image: "/reawaken.webp",
+      discordLink: "#",
       type: "Open World RPG",
       tags: ["Open World", "RPG"],
       groupLink: "#",
@@ -114,7 +115,9 @@ export default function Home() {
               <div className="absolute inset-0 border-4 border-primary/20 rounded-full"></div>
               <div className="absolute inset-0 border-4 border-primary rounded-full animate-spin border-t-transparent"></div>
             </div>
-            <p className="text-white/60 text-sm">Loading Sai's Portfolio...</p>
+            <p className="text-white/60 text-sm">
+              Loading Silva's Portfolio...
+            </p>
           </div>
         </div>
       )}
@@ -136,20 +139,14 @@ export default function Home() {
       <Card className="w-full max-w-2xl bg-primary/10 backdrop-blur-md border-white shadow-2xl">
         <CardContent className="p-6">
           <div className="flex flex-col gap-4 justify-center items-center">
-            <Image
-              src="/avatar.webp"
-              alt="Sai"
-              width={100}
-              height={100}
-              className="rounded-full"
-            />
+            <SilvaAvatar />
             <div className="flex flex-col items-center">
               <h2 className="text-white font-light text-3xl mb-2 tracking-wide">
-                sai
+                silva
               </h2>
               <p className="text-muted/80 text-sm">
                 {" "}
-                Sai | Game Concept & QA Specialist
+                Silva | Game Concept & QA Specialist
               </p>
             </div>
           </div>
@@ -286,7 +283,7 @@ export default function Home() {
             <p className="text-white/30 text-xs">Available for collaboration</p>
             <Link
               href="https://github.com/s1ddiq"
-              className="text-xs text-primary underline relative group"
+              className="text-xs opacity-15 text-primary underline relative group"
             >
               Made by s1ddiq
               {/* Subtle glow on hover */}
